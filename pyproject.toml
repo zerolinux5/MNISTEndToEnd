@@ -1,0 +1,16 @@
+[project]
+name = "mnistendtoend"
+version = "0.1.0"
+description = "FASTAPI with PyTorch"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "wandb>=0.24.1",
+    "torch",
+    "torchvision",
+    "torchinfo>=1.8.0",
+    "tqdm>=4.67.3",
+]
+
+[tool.uv.pip]
+extra-index-url = ["https://download.pytorch.org/whl/cu128"]
